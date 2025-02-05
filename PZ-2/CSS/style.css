@@ -1,0 +1,68 @@
+body{
+    color: #009933;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+p{
+    letter-spacing: 10px;
+}
+
+.kursiv{
+   font-style: italic;
+   text-decoration: underline; 
+}
+
+.task_10{
+    font-family: Comic Sans;
+    font-size: 25pt;
+    text-indent: 50px;
+}
+
+.rich{
+    font-weight: bold;
+    font-style: italic;
+    color: yellow;
+    line-height: 25pt;
+}
+
+.perenos{
+    white-space: nowrap;
+}
+
+.red{
+    color: red;
+    text-transform: uppercase;
+}
+
+.task_15{
+    font-family: Courier;
+    font-size: 12pt;
+    text-transform: uppercase;
+    word-spacing: 200%;
+    font-style: italic;
+    text-indent: 2cm;
+    line-height: 2pt;
+}
+
+/*Мои классы*/
+.my_class_1{
+   color: red;
+   font-size: 12pt;
+   font-family: 'Comic Sans MS', sans-serif;
+   font-style: italic;
+}
+
+.my_class_2{
+    color: green;
+    font-size: 16pt;
+    font-family: 'Impact';
+    text-transform: uppercase;
+}
+
+.my_class_3{
+    color: black;
+    font-family: 'Courier New', sans-serif;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
