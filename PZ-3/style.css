@@ -1,0 +1,70 @@
+/*Таблица №1*/
+.table_1 {
+    border: 8px outset #bfbfbf;
+    margin: 15px 35px;
+    /*background-color: #cdbfad;*/
+}
+
+.th_1 {
+    font-size: 14pt;
+    color: #af0823;
+    background-color: #bfbfbf;
+    font-style: normal;
+}
+
+.caption_1 {
+    color: #af0823;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.td_1 {
+    font-weight: bold;
+}
+
+.fon_for_table_1 {
+    background-image: url("y.jpg");
+    background-size: contain;
+    width: 400px;
+    height: 200px;
+}
+
+a {
+    border: 1px dotted green;
+}
+
+
+
+/*Таблица №1*/
+.table_2 {
+    border: 6px outset #ffffff;
+    margin: 25px;
+    width: 600px;
+    height: 300px;
+}
+
+.caption_2 {
+    color: #b06760;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.th_td_2 {
+    text-align: left;
+}
+
+.td_column_1 {
+    text-align: center;
+    background-color: #b06760;
+    color: #e9d5d5;
+    font-weight: bold;
+}
+
+.fon_for_table_2 {
+    background-color: #e9d5d5;
+    width: 650px;
+    height: 400px;
+}
+
+/*Таблица №3*/
