@@ -1,0 +1,384 @@
+/**/
+.common {
+    width: 600px;
+    border: 1px dashed black;
+}
+
+.common_1 {
+    width: 600px;
+    border: 1px dashed black;
+    height: 45px;
+}
+
+.common_2 {
+    width: 600px;
+    border: 1px dashed black;
+    height: 60px;
+}
+
+ul {
+    padding: 10px 10px;
+    margin: 0px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.menu1 {
+    color: blue;
+    list-style-position: inside;
+}
+
+.menu1 a:link,
+.menu1 a:visited {
+    text-decoration: none;
+    color: blue;
+    font: 13px Arial;
+}
+
+.menu1 a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+
+/*3*/
+.menu2 {
+    list-style-type: none;
+    width: 200px;
+}
+
+.menu2 li {
+    margin-bottom: 5px;
+}
+
+.menu2 a:link,
+.menu2 a:visited {
+    text-decoration: none;
+    color: blue;
+    font: 13px Arial;
+    border: 1px solid blue;
+    display: block;
+    padding: 0px 5px;
+    line-height: 30px;
+}
+
+.menu2 a:hover {
+    font-weight: bold;
+}
+
+
+/*3*/
+.menu3 {
+    list-style-type: none;
+    width: 200px;
+}
+
+.menu3 li {
+    margin-bottom: 5px;
+    background-color: rgb(50, 50, 50);
+    border: 1px solid black;
+}
+
+.menu3 a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font: 13px Arial;
+    padding: 0px 5px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.menu3 a:hover {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+
+
+/*4*/
+.menu4 {
+    list-style-type: none;
+    width: 200px;
+}
+
+.menu4 li {
+    margin-bottom: 5px;
+    background-color: #3561ff;
+    border: 1px solid #3561ff;
+}
+
+.menu4 a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+    font: 13px "Arial";
+    font-weight: bold;
+    display: block;
+    padding: 0px 5px;
+    line-height: 30px;
+}
+
+.menu4 a:hover {
+    background-color: white;
+    color: blue;
+    background-image: url('image.png');
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+
+/*5*/
+.menu5 {
+    list-style-type: none;
+}
+
+.menu5 li {
+    margin-right: 5px;
+    float: left;
+}
+
+.menu5 a:link,
+a:visited {
+    color: blue;
+    text-decoration: none;
+    border: 1px solid blue;
+    font: 13px Arial;
+    padding: 5px;
+    display: block;
+}
+
+
+.menu5 a:hover,
+a:active {
+    color: red;
+}
+
+
+
+/*6*/
+.menu6 {
+    list-style-type: none;
+}
+
+.menu6 li {
+    margin-right: 4px;
+    float: left;
+}
+
+.menu6 a:link,
+a:visited {
+    text-decoration: none;
+    color: blue;
+    font: 13px Arial;
+    display: block;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+.menu6 a:hover,
+a:active {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/*7*/
+.menu7 {
+    list-style-type: none;
+}
+
+.menu7 li {
+    margin-right: 5%;
+    float: left;
+}
+
+.menu7_1 a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+    font: 13px Arial;
+    display: block;
+    padding: 5px;
+    padding-top: 30px;
+    background-image: url("1.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_1 a:hover,
+a:active {
+    color: blue;
+    background-image: url("1_1.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_2 a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+    font: 13px Arial;
+    display: block;
+    padding: 5px;
+    padding-top: 30px;
+    background-image: url("2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_2 a:hover,
+a:active {
+    color: blue;
+    background-image: url("2_1.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_3 a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+    font: 13px Arial;
+    display: block;
+    padding: 5px;
+    padding-top: 30px;
+    background-image: url("3.jpg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_3 a:hover,
+a:active {
+    color: blue;
+    background-image: url("3_1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.menu7_4 a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+    font: 13px Arial;
+    display: block;
+    padding: 5px;
+    padding-top: 30px;
+    background-image: url("4.jpg");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.menu7_4 a:hover,
+a:active {
+    color: blue;
+    background-image: url("4_1.png");
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.menu7_5 a:link,
+a:visited {
+    color: grey;
+    text-decoration: none;
+    font: 13px Arial;
+    display: block;
+    padding: 5px;
+    padding-top: 30px;
+    background-image: url("5.png");
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.menu7_5 a:hover,
+a:active {
+    color: blue;
+    background-image: url("5_1.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+/*8*/
+
+.common_3 {
+    width: 750px;
+    height: 75px;
+    border: 1px dashed black;
+}
+
+.menu8 {
+    list-style-type: none;
+}
+
+.menu8 li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 80px;
+}
+
+.menu8 a:link,
+a:visited {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font: 16px Arial;
+    background-color: rgb(255, 145, 0);
+
+}
+
+.menu8 a:hover,
+a:active {
+    background-color: red;
+}
+
+
+
+/*9*/
+
+.menu9 {
+    margin: 10px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    font-family: "Times New Roman";
+    border-collapse: collapse;
+    color: rgba(0, 0, 0, 0.584);
+}
+
+.menu9_1 {
+    color: rgba(108, 108, 247, 0.975);
+}
+
+.menu9 td:hover,
+td:active {
+    color: red;
+    font-weight: bold;
+}
+
+.menu9 th {
+    border-bottom: 1px solid black;
+    color: rgba(0, 0, 0, 0.584);
+    border-spacing: 0px;
+}
