@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>PZ-15 (Azizov B) - gallery</title>
+
+	<script type="text/javascript" src="../highslide/highslide-with-gallery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../highslide/highslide.css" />
+	<link rel="stylesheet" href="../css/menu.css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="../highslide/highslide-ie6.css" />
+<![endif]-->
+
+	<!--
+    1) Optionally override the settings defined at the top
+    of the highslide.js file. The parameter hs.graphicsDir is important!
+-->
+	<script type="text/javascript">
+		hs.graphicsDir = '../highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.fadeInOut = true;
+		hs.dimmingOpacity = 0.8;
+		hs.outlineType = 'rounded-white';
+		hs.captionEval = 'this.thumb.alt';
+		hs.marginBottom = 105 // make room for the thumbstrip and the controls
+		hs.numberPosition = 'caption';
+
+		// Add the slideshow providing the controlbar and the thumbstrip
+		hs.addSlideshow({
+			//slideshowGroup: 'group1',
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			overlayOptions: {
+				className: 'text-controls',
+				position: 'bottom center',
+				relativeTo: 'viewport',
+				offsetY: -60
+
+			},
+			thumbstrip: {
+				position: 'bottom center',
+				mode: 'horizontal',
+				relativeTo: 'viewport'
+			}
+		});
+	</script>
+
+	<style>
+		body {
+			width: 1300px;
+		}
+
+
+		.fon {
+			background: linear-gradient(to right,
+					rgb(29, 119, 255) 0%,
+					white 10%,
+					white 50%,
+					white 90%,
+					rgb(29, 119, 255) 100%);
+		}
+
+
+		.main-info {
+			display: grid;
+			grid-template: auto / 20% 80%;
+		}
+
+		.heading {
+			color: rgb(12, 141, 253);
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 30px;
+			letter-spacing: 15px;
+		}
+
+		.menu-navigation {
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 0px;
+		}
+
+		.text {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body class="fon">
+
+	<div class="main-info">
+		<div class="menu-navigation">
+			<h3 style="color: rgb(0, 0, 95); font-size: 21pt;">Содержание</h3>
+			<ul id="navigation">
+				<li><a href="../index.html">На главную</a></li>
+				<li><a href="../history.html">История лилий</a></li>
+				<li><a href="gallery.html">Фотогалерея</a></li>
+				<li><a href="../contact.html">Контакты</a></li>
+			</ul>
+		</div>
+
+		<div class="info">
+			<div class="heading">
+				<h1><b>ФОТОГАЛЕРЕЯ</b></h1>
+			</div>
+
+			<div class="text">
+				<h3>Лилия - это символ надежды в Древней Греции, мира и непорочности на Руси,
+					а во Франции эти цветы обозначали - милосердие, сострадание и правосудие.</h3>
+				<hr width="700" color="silver" size="2px" style="">
+			</div>
+
+			<div class="highslide-gallery" style="width: 700px; margin: auto;">
+
+				<a class='highslide' href='../images/7286.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7265.small.png' alt='Венту Марсель' /></a>
+
+				<a class='highslide' href='../images/7267.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7267.small.png' alt='Марлен' /></a>
+				<!---->
+				<a class='highslide' href='../images/7268.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7268.small.png' alt='Лилия даурская' /></a>
+
+				<a class='highslide' href='../images/7269.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7269.small.png' alt='Сорбет' /></a>
+
+				<a class='highslide' href='../images/7270.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7270.small.png' alt='Лилия регале' /></a>
+
+				<a class='highslide' href='../images/7271.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7271.small.png' alt='Наина' /></a>
+
+				<a class='highslide' href='../images/7275.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7275.small.png' alt='Белое Безмолвие' /></a>
+
+				<a class='highslide' href='../images/7277.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7277.small.png' alt='Аз Болгария' /></a>
+
+				<a class='highslide' href='../images/7285.jpg' onclick="return hs.expand(this)">
+					<img src='../images/7285.small.png' alt='Аз Диадема' /></a>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

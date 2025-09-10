@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-10 (Azizov B)</title>
+
+    <style>
+        /* Блок info */
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 77px;
+            height: 100%;
+        }
+
+        .info__icon {
+            /* Стили для контейнера иконки */
+        }
+
+        .info__icon-img {
+            display: block;
+        }
+
+        .info__icon-img_round {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        .info__title {
+            font-weight: normal;
+            color: dimgrey;
+        }
+
+        .info__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin-top: 10px;
+        }
+
+        .info__input {
+            display: block;
+            height: 30px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-color: dimgray;
+        }
+
+        .info__input_long {
+            width: 420px;
+        }
+
+        .info__input_short {
+            width: 220px;
+        }
+
+        /* Блок expert */
+        .expert {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .expert__icon-img_small {
+            width: 60px;
+            height: 60px;
+        }
+
+        .expert__title {
+            font-weight: normal;
+        }
+
+        .expert__form-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .expert__form-wrap {
+            padding: 10px;
+        }
+
+        .expert__checkbox {
+            margin: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="info">
+        <div class="info__icon">
+            <img src="image.png" class="info__icon-img info__icon-img_round" alt="Иконка">
+        </div>
+        <h2 class="info__title">Личная информация</h2>
+        <div class="info__form">
+            <form>
+                <input class="info__input info__input_long" placeholder="ФИО">
+                <input class="info__input info__input_short" placeholder="Год рождения" list="years">
+                <datalist id="years">
+                    <option>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                </datalist>
+                <input class="info__input info__input_long" placeholder="Место проживания">
+                <input class="info__input info__input_long" placeholder="Skype">
+                <input class="info__input info__input_long" placeholder="E-mail">
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <div class="expert">
+        <div class="expert__icon">
+            <img src="image2.png" class="expert__icon-img expert__icon-img_small" alt="Иконка меню">
+        </div>
+        <h2 class="expert__title">Расскажите о своём опыте</h2>
+        <div class="expert__form-container">
+            <div class="expert__form-wrap">
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="1">
+                    <label for="1" class="expert__label">БЭМ/OOCSS</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="2">
+                    <label for="2" class="expert__label">Styles/LESS/SASS</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="3">
+                    <label for="3" class="expert__label">Работаю с SVG</label>
+                </div>
+            </div>
+            <div class="expert__form-wrap">
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="4">
+                    <label for="4" class="expert__label">Верстаю семантично</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="5">
+                    <label for="5" class="expert__label">ES2015/ES2016</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="6">
+                    <label for="6" class="expert__label">Gulp/GRUNT</label>
+                </div>
+            </div>
+            <div class="expert__form-wrap">
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="7">
+                    <label for="7" class="expert__label">Webpack</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="8">
+                    <label for="8" class="expert__label">jQuery</label>
+                </div>
+                <div class="expert__checkbox">
+                    <input type="checkbox" class="expert__input" id="9">
+                    <label for="9" class="expert__label">Использую Git</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

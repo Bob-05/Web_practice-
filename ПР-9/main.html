@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-9 (Azizov)</title>
+    <style>
+        h1 {
+            margin-top: 60px;
+        }
+
+        /*1*/
+        .art_1 {
+            width: 400px;
+            height: auto;
+            border: 1px Solid black;
+        }
+
+        .art_1_cont {
+            display: flex;
+            background-color: aquamarine;
+            width: 200px;
+            height: auto;
+            border: 1px Solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .art_1_cont div {
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            margin: 4px;
+            font-size: 60px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+
+        /*2*/
+        .art_2 {
+            width: 400px;
+            height: auto;
+            border: 1px Solid black;
+            margin-top: 10px;
+        }
+
+        .art_2_cont {
+            display: flex;
+            background-color: aquamarine;
+            width: 300px;
+            height: auto;
+            border: 1px Solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .art_2_cont div {
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            margin: 4px;
+            font-size: 60px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+
+        /*3*/
+        .art_3 {
+            width: 400px;
+            height: auto;
+            border: 1px Solid black;
+            margin-top: 10px;
+        }
+
+        .art_3_cont {
+            display: flex;
+            background-color: aquamarine;
+            width: 300px;
+            height: 200px;
+            border: 1px Solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .art_3_cont div {
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            margin: 4px;
+            font-size: 60px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+
+        /*4*/
+        .art_4 {
+            width: 422px;
+            height: auto;
+            border: 1px Solid black;
+            margin-top: 10px;
+        }
+
+        .art_4_cont {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+            width: 400px;
+            height: 200px;
+            border: 1px Solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .art_4_cont div {
+            border: 1px solid black;
+            width: 60px;
+            height: 60px;
+            margin: 4px;
+            font-size: 60px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1-->
+    <h1>flex-direction (1)</h1>
+    <article class="art_1">
+        <div class="art_1_cont">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_1_cont" style="flex-direction: row-reverse;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_1_cont" style="flex-direction: column;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_1_cont" style="flex-direction: column-reverse;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </article>
+
+    <!--2-->
+    <h1>Justify-content (2)</h1>
+    <article class="art_2">
+
+        <div class="art_2_cont" style="justify-content: flex-start">
+            <div>1</div>
+            <div>2</div>
+        </div class="art_2_cont">
+
+        <div class="art_2_cont" style="justify-content: flex-end">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_2_cont" style="justify-content: center;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_2_cont" style="justify-content: space-between;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_2_cont" style="justify-content: space-around">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_2_cont" style="justify-content: space-evenly;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </article>
+
+    <!--3-->
+    <h1>align-items (3)</h1>
+    <article class="art_3">
+        <div class="art_3_cont" style="align-items: center;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_3_cont" style="align-items: flex-start;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_3_cont" style="align-items: flex-end;">
+            <div>1</div>
+            <div>2</div>
+        </div>
+
+        <div class="art_3_cont" style="align-items: stretch">
+            <div style="height: auto;">1</div>
+            <div style="height: auto;">2</div>
+        </div>
+
+        <div class="art_3_cont" style="align-items: baseline">
+            <div style="height: 60px; font-size: 19pt;">1</div>
+            <div style="height: 40px; font-size: 12pt;">2</div>
+            <div style="height: 10px; font-size: 8pt;">3</div>
+            <div style="height: 90px; font-size: 14pt;">4</div>
+        </div>
+    </article>
+    <article class="art_3">
+        <div class="art_3_cont">
+            <div style="align-self: flex-end;">1</div>
+            <div style="align-self: flex-end;">2</div>
+        </div>
+
+        <div class="art_3_cont" style="flex-direction: row-reverse;">
+            <div style="align-self: flex-start;">1</div>
+            <div style="align-self: flex-start;">2</div>
+        </div>
+
+        <div class="art_3_cont" style=" justify-content: center;">
+            <div style="align-self: center;">1</div>
+        </div>
+    </article>
+
+    <!--4-->
+    <h1>flex-wrap (4)</h1>
+    <article class="art_4">
+        <div class="art_4_cont">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </article>
+
+</html>
+
+
+<!--
+<div class="art_1_cont">
+    <div>1</div>
+    <div>2</div>
+</div>
+
+<div class="art_1_cont" style="flex-direction: row-reverse;">
+    <div>1</div>
+    <div>2</div>
+</div>
+
+<div class="art_1_cont" style="flex-direction: column;">
+    <div>1</div>
+    <div>2</div>
+</div>
+
+<div class="art_1_cont" style="flex-direction: column-reverse;">
+    <div>1</div>
+    <div>2</div>
+</div>
+-->

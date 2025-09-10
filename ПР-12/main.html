@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-12 (Azizov B.)</title>
+
+    <style>
+        /*1*/
+        .task1 {
+            display: grid;
+            grid-template-columns: 100px 150px 200px;
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+        }
+
+        .task1 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+
+        /*2*/
+        .task2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+            margin-top: 20px;
+        }
+
+        .task2 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*3*/
+        .task3 {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 2.5fr;
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+            margin-top: 20px;
+        }
+
+        .task3 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*4*/
+        .task4 {
+            display: grid;
+            grid-template-columns: 20% 1fr 1fr;
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+            margin-top: 20px;
+        }
+
+        .task4 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*5*/
+        .task5 {
+            display: grid;
+            grid-template-columns: repeat(4, 100px) repeat(3, 2fr);
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+            margin-top: 20px;
+        }
+
+        .task5 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*6*/
+        .task6 {
+            display: grid;
+            grid-template-columns: 100px 150px auto;
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+            margin-top: 20px;
+        }
+
+        .task6 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*7*/
+        .task7 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 200px);
+            border: 1px solid black;
+            padding: 10px;
+            width: 450px;
+            margin-top: 20px;
+        }
+
+        .task7 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+
+        /*8*/
+        .task8 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            border: 1px solid black;
+            padding: 10px;
+
+            margin-top: 20px;
+        }
+
+        .task8 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*9*/
+        .task9 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 150px);
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+
+            margin-top: 20px;
+        }
+
+        .task9 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*10*/
+        .task10 {
+            display: grid;
+            grid-template-rows: 100px 150px 200px;
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .task10 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+
+        /*11*/
+        .task11 {
+            display: grid;
+            grid-template: 2fr 1fr 1fr / 2fr 1fr 2fr 1fr;
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .task11 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        /*12*/
+        .task12 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .task12 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        .elem1 {
+            grid-row: 1/2;
+        }
+
+        .elem2 {
+            grid-row: 2/3;
+        }
+
+        .elem5 {
+            grid-row: 3/4;
+        }
+
+        .elem4 {
+            grid-row: 2/4;
+        }
+
+
+        /*13*/
+        .task13 {
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .task13 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+
+        .elem13_1 {
+            grid-row: 1/2;
+        }
+
+        .elem13_2 {
+            grid-row: 1/2;
+        }
+
+        .elem13_3 {
+            grid-row: 1/2;
+        }
+
+        .elem13_4 {
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+
+        .elem13_5 {
+            grid-row: 2/3;
+        }
+
+        .elem13_6 {
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+
+
+        /*14*/
+        .task14 {
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+            border: 1px solid black;
+            width: 450px;
+            padding: 10px;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .task14 div {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1-->
+    <div class="task1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--2-->
+    <div class="task2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--3-->
+    <div class="task3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--4-->
+    <div class="task4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--5-->
+    <div class="task5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--6-->
+    <div class="task6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--7-->
+    <div class="task7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+    <!--8-->
+    <div class="task8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--9-->
+    <div class="task9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <!--10-->
+    <div class="task10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!--11-->
+    <div class="task11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+
+    <!--12-->
+    <div class="task12">
+        <div class="elem1">1</div>
+        <div class="elem2">2</div>
+        <div class="elem3">3</div>
+        <div class="elem4">4</div>
+        <div class="elem5">5</div>
+    </div>
+
+
+
+    <!--13-->
+    <div class="task13">
+        <div class="elem13_1">1</div>
+        <div class="elem13_2">2</div>
+        <div class="elem13_3">3</div>
+        <div class="elem13_4">4</div>
+        <div class="elem13_5">5</div>
+        <div class="elem13_6">6</div>
+    </div>
+
+
+    <!--14-->
+    <div class="task14">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+
+</html>

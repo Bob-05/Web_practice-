@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-14 (Azizov B.)</title>
+
+    <style>
+        /*тест*/
+
+        @keyframes move {
+            from {
+                margin-left: 10px;
+            }
+
+            to {
+                margin-left: 100%;
+            }
+        }
+
+        .task1 {
+            display: flex;
+            border: 1px dashed black;
+            height: 100px;
+            width: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .task1__elem {
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid red;
+            margin-left: 10px;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+
+        .task2 {
+            display: flex;
+            border: 1px dashed black;
+            height: 100px;
+            width: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .task2__elem {
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid red;
+            margin-left: 10px;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+        /*3*/
+        @keyframes color_back_elem {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: white;
+            }
+        }
+
+        @keyframes color_back_block {
+            from {
+                background-color: rgb(255, 255, 255);
+            }
+
+            to {
+                background-color: rgb(255, 0, 0);
+            }
+        }
+
+
+        .task3 {
+            display: flex;
+            border: 1px dashed black;
+            height: 100px;
+            width: auto;
+            flex-direction: row;
+            align-items: center;
+            animation-name: color_back_block;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        .task3__elem {
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+            border: 1px solid red;
+            margin-left: 10px;
+            animation-name: color_back_elem;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        /*4*/
+        @keyframes task4_anim {
+            0% {
+                margin-left: 0%;
+                margin-top: 0%;
+            }
+
+            25% {
+                margin-left: 60%;
+                margin-top: 0%;
+            }
+
+            50% {
+                margin-left: 60%;
+                margin-top: 20%;
+            }
+
+            75% {
+                margin-left: 0%;
+                margin-top: 20%;
+            }
+
+            100% {
+                margin-left: 0%;
+                margin-top: 0%;
+            }
+        }
+
+        .task4 {
+            height: 300px;
+            width: 100%;
+            border: 1px dashed black;
+        }
+
+        .task4__elem {
+            -webkit-animation: task4_anim 8s linear 30;
+            animation: task4_anim 8s linear 30;
+        }
+
+
+        .task4__elem {
+            border: 1px solid red;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+        }
+
+
+
+        /*5*/
+        @keyframes task5_anim {
+            0% {
+                margin-left: 1%;
+            }
+
+            50% {
+                margin-left: 50%;
+            }
+
+            100% {
+                margin-left: 95%;
+            }
+        }
+
+
+        .task5 {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            border: 1px dashed black;
+            align-items: center;
+        }
+
+
+        .task5__elem {
+            border: 1px solid red;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+            animation-name: task5_anim;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        /*6*/
+        @keyframes task6_anim {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .task6 {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            border: 1px dashed black;
+            align-items: center;
+        }
+
+
+        .task6__elem {
+            margin: 0px auto;
+            width: 50%;
+            height: 30px;
+            border: 1px solid red;
+
+        }
+
+        .task6__elem2 {
+            background-color: red;
+            width: 0%;
+            height: 30px;
+
+            -webkit-animation: task6_anim 5s linear 1 forwards;
+            animation: task6_anim 5s linear 1 forwards;
+        }
+
+
+        /*7*/
+        @keyframes task7_1 {
+            from {
+                margin-left: 5px;
+            }
+
+            to {
+                margin-left: 95%;
+            }
+        }
+
+        @keyframes task7_2 {
+            from {
+                margin-left: 5px;
+            }
+
+            to {
+                margin-left: 95%;
+            }
+        }
+
+        .task7 {
+            height: 280px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed black;
+            flex-direction: column;
+        }
+
+        .task7__elem {
+            width: 80%;
+            height: 130px;
+            margin: 5px;
+            border: 1px dashed black;
+            display: flex;
+            align-items: center;
+        }
+
+        .task7__elem2 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgb(255, 0, 0);
+            margin-left: 5px;
+            animation-name: task7_1;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-play-state: paused;
+        }
+
+        .task7__elem2:hover {
+            animation-play-state: running;
+        }
+
+        .task7__elem3 {
+            width: 50%;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .task7__elem4 {
+            width: 30px;
+            height: 30px;
+            border: 1px solid rgb(255, 0, 0);
+            margin: 5px;
+            animation-name: task7_2;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-play-state: paused;
+        }
+
+        .task7__elem3:hover+.task7__elem4 {
+            animation-play-state: running;
+        }
+
+
+        /*8*/
+        @keyframes task8 {
+
+            40%,
+            70%,
+            90% {
+                animation-timing-function: ease-out;
+                bottom: 0;
+            }
+
+            0% {
+                bottom: 200px;
+                left: 0;
+                animation-timing-function: ease-in;
+            }
+
+            55% {
+                bottom: 50px;
+                animation-timing-function: ease-in;
+            }
+
+            80% {
+                bottom: 25px;
+                animation-timing-function: ease-in;
+            }
+
+            95% {
+                bottom: 10px;
+                animation-timing-function: ease-in;
+            }
+
+            100% {
+                left: 110px;
+                bottom: 0;
+                animation-timing-function: ease-out;
+            }
+
+        }
+
+        .task8 {
+            margin: 0px auto;
+            width: 220px;
+            height: 220px;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .task8__elem {
+            background: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            position: absolute;
+            animation: task8 4s infinite;
+        }
+
+
+        /*9*/
+        @keyframes task9 {
+            0% {
+                margin-left: 0%;
+                margin-top: 0%;
+            }
+
+            25% {
+                margin-left: 50%;
+                margin-top: 0%;
+            }
+
+            50% {
+                margin-left: 50%;
+                margin-top: 20%;
+            }
+
+            75% {
+                margin-left: 0%;
+                margin-top: 20%;
+            }
+
+            100% {
+                margin-left: 0%;
+                margin-top: 0%;
+            }
+        }
+
+
+        @keyframes task9_2 {
+            0% {
+                background-color: white;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        @keyframes task9_3 {
+            0% {
+                background-color: rgb(255, 0, 0);
+            }
+
+            100% {
+                background-color: rgb(255, 255, 255);
+            }
+        }
+
+
+        .task9 {
+            height: 300px;
+            width: 100%;
+            border: 1px dashed black;
+            animation: task9_3 5s linear 30;
+        }
+
+        .task9__elem {
+            -webkit-animation: task4_anim 5s linear 30, task9_2 5s linear 30;
+            animation: task4_anim 5s linear 30, task9_2 5s linear 30;
+        }
+
+
+        .task9__elem {
+            border: 1px solid red;
+            margin-left: 10px;
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+    <div class="task1">
+        <div class="task1__elem"></div>
+    </div>
+    <br>
+    <div class="task2">
+        <div class="task2__elem"></div>
+    </div>
+    <br>
+    <div class="task3">
+        <div class="task3__elem"></div>
+    </div>
+    <br>
+    <div class="task4">
+        <div class="task4__elem"></div>
+    </div>
+    <br>
+    <div class="task5">
+        <div class="task5__elem"></div>
+    </div>
+    <br>
+    <div class="task6">
+        <div class="task6__elem">
+            <div class="task6__elem2"></div>
+        </div>
+    </div>
+    <br>
+    <div class="task7">
+        <div class="task7__elem">
+            <div class="task7__elem2"></div>
+        </div>
+
+        <br>
+        <div class="task7__elem" style="justify-content: center; align-items: flex-start ; flex-direction: column;">
+            <div class="task7__elem3" style="text-align: center; margin: 5px;">
+                <p>Наведи на меня</p>
+            </div>
+            <div class="task7__elem4"></div>
+        </div>
+
+    </div>
+    <br>
+    <div class="task4" style="display: flex; align-items: center; justify-content: center;">
+        <div class="task8">
+            <div class="task8__elem"></div>
+        </div>
+    </div>
+    <br>
+    <div class="task9">
+        <div class="task9__elem"></div>
+    </div>
+</body>
+
+</html>

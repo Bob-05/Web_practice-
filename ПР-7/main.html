@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-7 (Azizov)</title>
+    <style>
+        .art_1 {
+            height: 250px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .art_2 {
+            height: 60px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        .art_3 {
+            height: 180px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .art_3 fieldset {
+            height: 60px;
+            width: 500px;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .art_4 {
+            height: 80px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .s_a_4 {
+            height: 50px;
+        }
+
+
+        .art_5 {
+            height: 20px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        .art_6 {
+            height: 185px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .art_7 {
+            height: 480px;
+            width: 600px;
+            border: 1px dotted black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .art_7 textarea {
+            height: 90px;
+            width: 200px;
+            margin: 10px;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="art_1">
+        <form>
+            <input type="text" placeholder="Плейсхолдер"><br><br>
+            <input type="text"><br><br>
+            <input type="text" disabled placeholder="disabled"><br><br>
+            <textarea placeholder="Введите текст"></textarea><br><br>
+            <input type="submit" value="Кнопка через тег input"><br><br>
+            <button>Кнопка через тег button</button>
+        </form>
+    </article>
+
+    <article class="art_2">
+        <form>
+            <input type="text" id="1">
+            <label for="1">Это метка для инпута - и инпут получит фокус!</label> <br> <br>
+            <input type="submit" value="Отправить на сервер">
+        </form>
+    </article>
+
+    <article class="art_3">
+        <form>
+            <label><input type="checkbox">Это метка для чекбокса. Нажмите на меня - чекюокс сменит галочку!</label> <br>
+            <label><input type="checkbox" checked>Я отмечен по умолчанию!</label> <br>
+            <label><input type="checkbox" checked disabled>Я Disabled</label>
+
+            <fieldset>
+                <legend>Это группа радиокнопок - только одна из них может быть отмечена</legend>
+                <input type="radio" name="1" id="11">
+                <label for="11">Это метка для радио</label>
+                <br>
+                <input type="radio" name="1" id="12">
+                <label for="12">Это метка для радио</label>
+            </fieldset>
+            <input type="submit" value="Отправить на сервер">
+        </form>
+    </article>
+
+    <article class="art_4">
+        <form>
+            <select name="select">
+                <option>Минск</option>
+                <option>Москва</option>
+                <option>Киев</option>
+                <option selected>Нью-Йорк</option>
+                <option>Варшава</option>
+            </select>
+            <select multiple name="select[]" class="s_a_4">
+                <option>Минск</option>
+                <option>Москва</option>
+                <option>Киев</option>
+                <option selected>Нью-Йорк</option>
+                <option>Варшава</option>
+            </select>
+            <select multiple name="select[]">
+                <option selected>Минск</option>
+                <option>Москва</option>
+                <option>Киев</option>
+                <option selected>Нью-Йорк</option>
+                <option>Варшава</option>
+            </select>
+        </form>
+    </article>
+
+
+    <article class="art_5">
+        <form>
+            <input type="file">
+            <input type="submit" value="Отправить на сервер">
+        </form>
+    </article>
+
+    <article class="art_6">
+        <form>
+            <fieldset>
+                <legend>Выберите кнопочку</legend>
+                <input type="radio" name="61">
+                <input type="radio" name="61">
+                <input type="radio" name="61">
+                <input type="text" placeholder="Ваше имя...">
+            </fieldset>
+
+            <fieldset>
+                <legend>Выберите ещё кнопочку</legend>
+                <input type="radio" name="62">
+                <input type="radio" name="62">
+                <input type="radio" name="62">
+            </fieldset>
+
+            <br> <br> <br>
+
+            <input type="submit" value="Отправить на сервер">
+        </form>
+    </article>
+
+
+    <article class="art_7">
+        <form>
+            <textarea placeholder="Ограничена ширина и высота"></textarea> <br>
+            <textarea></textarea><br>
+            <textarea></textarea><br>
+            <textarea></textarea><br>
+    </article>
+</body>
+
+</html>

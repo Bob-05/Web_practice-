@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-15 (Azizov B.) - contact</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="php" href="send.php">
+
+
+    <style>
+        .fon {
+            background: linear-gradient(to right,
+                    rgb(29, 119, 255) 0%,
+                    white 10%,
+                    white 50%,
+                    white 90%,
+                    rgb(29, 119, 255) 100%);
+
+        }
+
+
+        .heading h1 {
+            text-align: center;
+            color: rgb(50, 0, 104);
+            letter-spacing: 14px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: 100%;
+            grid-template-columns: 1fr auto 1fr;
+        }
+
+        .heading {
+            /*border: 1px solid black;*/
+            margin-bottom: 20px;
+            margin-top: 20px;
+            grid-column: 1/4;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*border: 1px Solid black;*/
+            padding: 5px;
+            grid-column: 2/3;
+        }
+
+        .menu-navigation {
+            grid-column: 1/2;
+            margin-left: 90px;
+        }
+    </style>
+</head>
+
+
+<body class="fon">
+<?php
+ /* Здесь проверяется существование переменных */
+ if (isset($_POST['name'])) {$name = $_POST['name'];}
+ if (isset($_POST['email'])) {$email = $_POST['email'];}
+ if (isset($_POST['sub'])) {$sub = $_POST['sub'];}
+ if (isset($_POST['body'])) {$body = $_POST['body'];}
+
+/* Сюда впишите свою эл. почту */
+ $address = "------@mail.ru";
+
+/* А здесь прописывается текст сообщения, \n - перенос строки */
+ $mes = "Имя: $name \nE-mail: $email \nТема: $sub \nТекст: $body";
+
+/* А эта функция как раз занимается отправкой письма на указанный вами email */
+ $send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = windows-1251\r\nFrom:$email");
+ if ($send == 'true')
+ {
+ echo "Сообщение отправлено";
+ }
+ else
+ {
+ echo "Сообщение не отправлено";
+ }
+?>
+
+
+
+    <div class="container">
+
+        <div class="heading">
+            <h1>КОНТАКТАНИЯ ИНФОРМАЦИЯ</h1>
+        </div>
+
+        <div class="menu-navigation">
+            <h3 style="color: rgb(0, 0, 95); font-size: 21pt;">Содержание</h3>
+            <ul id="navigation">
+                <li><a href="index.html">На главную</a></li>
+                <li><a href="history.html">История лилий</a></li>
+                <li><a href="examples\gallery.html">Фотогалерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+
+
+        <div class="info">
+            <p style="color: rgb(0, 40, 201); ">
+                Магазин "Лилия" расположен по адресу: <br>
+                г. Ростов-на-Дону ул.Пушкинская 120 <br>
+                <br>
+                Контактный телефон: <br>
+                2-354-987, 8945123456<br>
+                <br>
+                Директор магазина - \\ укажите свои ФИО \\<br>
+            </p>
+            <div class="n">Форма обратной связи</div>
+            <form name="MyForm" action="send.php" method="post">
+                <table>
+                    <tr>
+                        <td>Ваше имя:</td>
+                        <td><input class="input" name="name" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Эл. почта:</td>
+                        <td><input class="input" name="email" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Тема:</td>
+                        <td><input class="input" name="sub" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td valign="top">Текст сообщения:</td>
+                        <td><textarea name="body" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input value="Отправить" type="submit" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

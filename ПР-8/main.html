@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PZ-8 (Azizov)</title>
+    <style>
+        /*1*/
+        .art_1 {
+            margin: auto;
+            border: 1px solid rgb(0, 30, 255);
+            height: auto;
+            width: 430px;
+            background-color: rgba(0, 98, 255, 0.789);
+            border-radius: 10px;
+        }
+
+        .art_1 textarea {
+            float: right;
+            height: 110px;
+            resize: none;
+            width: 200px;
+        }
+
+        .art_1 fieldset {
+            margin: auto;
+            height: auto;
+            width: 400px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border: 0px solid black;
+        }
+
+
+        .art_1 legend {
+            color: rgb(114, 63, 0);
+        }
+
+        .art_1_button {
+            display: block;
+            margin: auto;
+            width: 300px;
+            height: 40px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            border: 0px solid rgba(58, 133, 255, 0.789);
+            background-color: rgba(137, 202, 255, 0.844);
+            color: white;
+            font-size: 16pt;
+        }
+
+        .art_1_button input[type="submit"]:hover,
+        input[type="submit"]:active {
+            font-size: 17pt;
+        }
+
+
+        /*2*/
+        .art_2 {
+            color: #622808;
+            height: auto;
+            width: 610px;
+            margin: auto;
+        }
+
+        .art_2 fieldset {
+            background-color: #f8f3ee;
+            border: 2px solid #b2dee4;
+            border-radius: 10px;
+        }
+
+        .art_2 legend {
+            color: #86cfd9;
+            font-size: 16pt;
+        }
+
+        .art_2_td_1 {
+            width: 190px;
+            text-align: left;
+        }
+
+        .art_2 input {
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+        .art_2 input[type="radio"] {
+            width: auto;
+        }
+
+        .art_2 textarea {
+            width: 200px;
+            height: 60px;
+        }
+
+
+        .art_2 input[type="submit"] {
+            margin: 10px;
+            margin-left: 4px;
+            height: 45px;
+            width: 140px;
+            border-radius: 8px;
+            background: linear-gradient(white, #92c5c4);
+            color: #622808;
+            font-weight: none;
+        }
+
+        .art_2 input[type="submit"]:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="art_1">
+        <form>
+            <fieldset>
+                <legend><b>Форма регистрации</b></legend>
+                <br>
+                <table>
+                    <tr>
+                        <td style="width: 120px;"><label for="551">ФИО</label></td>
+                        <td><input type="text" id="551" required
+                                pattern="^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?\s[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?\s[А-ЯЁ][а-яё]+$">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px;"><label for="552">Email</label></td>
+                        <td><input type="email" id="552" required></td>
+
+                    <tr>
+                        <td style="width: 120px;"><label for="553">Номер телефона</label></td>
+                        <td><input type="tel" id="553" required
+                                pattern="^\+?\d{1,3}[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px;"><label for="554">Город</label></td>
+                        <td>
+                            <input type="text" list="cities" id="554">
+                            <datalist id="cities">
+                                <option>Москва</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Ростов-на-Дону</option>
+                                <option>Смоленск</option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px;"><label for="555">Дата рождения</label></td>
+                        <td><input type="date" id="555" style="width: 165px"></td>
+                    </tr>
+                </table>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <b>Параметры доставки</b>
+                </legend>
+                <br>
+                <table>
+                    <tr>
+                        <td style="width: 120px;"><label for="556">Адрес</label></td>
+                        <td style="width: 200px;"><textarea id="556"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px;"><label for="557">Почтоый индекс</label></td>
+                        <td><input style="width: 163px" id="557"></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> <b>Предпочитаемый способ получения уведомлений</b></legend>
+                <br>
+                <table>
+                    <tr>
+                        <td><input type="radio" name="1" value="email" id="558"></td>
+                        <td><label for="558">По Email</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="1" value="number" id="559"></td>
+                        <td><label for="559">По телефону</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="1" value="no" id="560">
+                        <td><label for="560">Не уведомлять меня</label></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <input type="submit" value="ОТПРАВИТЬ ДАННЫЕ" class="art_1_button">
+        </form>
+    </article>
+    <br>
+    <br>
+    <br>
+
+
+    <!--2-->
+    <article class="art_2">
+        <h1>Анкета посетителя ресторана</h1>
+        <!--1-->
+        <form>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <table>
+                    <tr>
+                        <td class="art_2_td_1"><label for="111">Имя</label></td>
+                        <td><input type="text" required id="111"></td>
+                    </tr>
+                    <tr>
+                        <td class="art_2_td_1"><label for="112">Телефон</label></td>
+                        <td><input id="112" type="tel" required
+                                pattern="^\+?\d{1,3}[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="art_2_td_1"><label for="113">Email</label></td>
+                        <td><input type="email" required id="113"></td>
+                    </tr>
+                    <tr>
+                        <td class="art_2_td_1"><label for="114">Дата посещения</label></td>
+                        <td><input type="date" id="114"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!--2-->
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <table>
+                    <tr>
+                        <td class="art_2_td_1"><label for="115">Возраст</label></td>
+                        <td><input type="number" min="1" max="100" step="1" id="115"></td>
+                    </tr>
+                    <tr>
+                        <td class="art_2_td_1"><label for="116">Любимая кухня</label></td>
+                        <td>
+                            <select id="116">
+                                <option>Русская</option>
+                                <option>Японская</option>
+                                <option>Французкая</option>
+                                <option>Итальянская</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="117">Какие блюда вы хотели бы увидеть в меню?</label></td>
+                        <td>
+                            <textarea id="117"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!--3-->
+            <fieldset>
+                <legend>Оценка нашего заведения</legend>
+                <h3>Почему вы выбрали наше заведение?</h3>
+                <input type="radio" id="118">
+                <label for="118">Недалеко от дома/работы</label><br>
+
+                <input type="radio" id="119">
+                <label for="119">Увидел рекламу</label><br>
+
+                <input type="radio" id="120">
+                <label for="120">Посоветовали</label><br>
+
+                <input type="radio" id="121">
+                <label for="121">Оптимальное соотношение цени и качества</label><br>
+
+
+                <h3>Вы будете рекомендовать наше заведение своим знакомым?</h3>
+                <input type="radio" name="answer" id="122">
+                <label for="122">Да</label> <br>
+
+                <input type="radio" name="answer" id="123">
+                <label for="123">Нет</label><br>
+            </fieldset>
+
+            <input type="submit">
+        </form>
+    </article>
+</body>
+
+</html>
